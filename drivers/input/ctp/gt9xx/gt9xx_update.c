@@ -199,7 +199,7 @@ static u8 gup_get_ic_fw_msg(struct i2c_client *client)
 	 */
 	for (i = 0; i < 4; i++)
 		update_msg.ic_fw_msg.hw_info[i] = buf[GTP_ADDR_LENGTH + 3 - i];
-		dev_dbg(&client->dev,
+	dev_dbg(&client->dev,
 			"IC Hardware info:%02x%02x%02x%02x",
 			update_msg.ic_fw_msg.hw_info[0],
 			update_msg.ic_fw_msg.hw_info[1],
