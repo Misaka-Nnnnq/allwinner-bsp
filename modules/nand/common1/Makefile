@@ -1,5 +1,6 @@
 
 ccflags-y += -I $(srctree)/include/linux/
+ccflags-y += -I $(srctree)/bsp/modules/nand/sun55iw3p1/
 
 ifeq ($(CC),clang)
 ccflags-y += -fsanitize-blacklist=$(srctree)/$(src)/blacklist.txt
