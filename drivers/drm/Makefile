@@ -1,9 +1,12 @@
 # SPDX-License-Identifier: GPL-2.0-only
-ccflags-y += -I$(srctree)/$(obj)/sunxi_device/hardware/
-ccflags-y += -I$(srctree)/$(obj)/sunxi_device/hardware/lowlevel_lcd/
-ccflags-y += -I$(srctree)/$(obj)/sunxi_device/hardware/lowlevel_tcon/
-ccflags-y += -I$(srctree)/$(obj)/phy/
-ccflags-y += -I$(srctree)/$(obj)/lib/inc/
+mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
+mkfile_dir := $(dir $(mkfile_path))
+
+ccflags-y += -I$(mkfile_dir)/sunxi_device/hardware/
+ccflags-y += -I$(mkfile_dir)/sunxi_device/hardware/lowlevel_lcd/
+ccflags-y += -I$(mkfile_dir)/sunxi_device/hardware/lowlevel_tcon/
+ccflags-y += -I$(mkfile_dir)/phy/
+ccflags-y += -I$(mkfile_dir)/lib/inc/
 
 # base
 sunxidrm-y += sunxi_drm_drv.o sunxi_drm_crtc.o sunxi_drm_intf.o
@@ -13,11 +16,11 @@ sunxidrm-y += sunxi_drm_debug.o kernel_panic_printf.o
 sunxidrm-$(CONFIG_DRM_FBDEV_EMULATION) += sunxi_fbdev_core.o sunxi_fbdev_platform.o
 
 # de
-include $(srctree)/$(obj)/sunxi_device/hardware/lowlevel_de/Makefile
+include $(mkfile_dir)/sunxi_device/hardware/lowlevel_de/Makefile
 sunxidrm-$(CONFIG_AW_DRM_DE) += $(de_obj)
 
 # tcon
-include $(srctree)/$(obj)/sunxi_device/hardware/lowlevel_tcon/Makefile
+include $(mkfile_dir)/sunxi_device/hardware/lowlevel_tcon/Makefile
 sunxidrm-$(CONFIG_AW_DRM_TCON) += $(tcon_obj) \
 				  sunxi_device/sunxi_tcon.o \
 				  sunxi_device/hardware/lowlevel_lcd/tcon_lcd.o
@@ -39,7 +42,7 @@ sunxidrm-$(CONFIG_AW_DRM_RGB) += sunxi_drm_rgb.o
 sunxidrm-$(CONFIG_AW_DRM_HDMI_TX) += sunxi_drm_hdmi.o
 sunxidrm-$(CONFIG_AW_DRM_HDMI_TX) += sunxi_device/sunxi_hdmi.o
 ccflags-$(CONFIG_AW_DRM_HDMI20) += -I$(src)/sunxi_device/hardware/lowlevel_hdmi20/
-include $(srctree)/$(obj)/sunxi_device/hardware/lowlevel_hdmi20/Makefile
+include $(mkfile_dir)/sunxi_device/hardware/lowlevel_hdmi20/Makefile
 sunxidrm-$(CONFIG_AW_DRM_HDMI20) += $(obj_low_hdmi)
 
 # edp
