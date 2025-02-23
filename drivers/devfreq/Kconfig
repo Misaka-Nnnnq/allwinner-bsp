@@ -21,6 +21,6 @@ config AW_DMC_DEVFREQ
 
 	  If in doubt, say N.
 
-source "$(BSP_TOP)drivers/devfreq/event/Kconfig"
+source "bsp/drivers/devfreq/event/Kconfig"
 
 endmenu

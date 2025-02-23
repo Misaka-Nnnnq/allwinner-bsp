@@ -9,10 +9,10 @@ config SUNXI_DIRECT_GPIO
 	  including setting input/output, pull-up/pull-down, drive capability and
 	  other interfaces (mainly used for control of box lights, buzzers, etc.)
 
-source "$(BSP_TOP)drivers/misc/sunxi-rf/Kconfig"
-source "$(BSP_TOP)drivers/misc/sunxi-addr/Kconfig"
-source "$(BSP_TOP)drivers/misc/sunxi-bootevent/Kconfig"
-source "$(BSP_TOP)drivers/misc/sunxi-tvutils/Kconfig"
-source "$(BSP_TOP)drivers/misc/leds/Kconfig"
+source "bsp/drivers/misc/sunxi-rf/Kconfig"
+source "bsp/drivers/misc/sunxi-addr/Kconfig"
+source "bsp/drivers/misc/sunxi-bootevent/Kconfig"
+source "bsp/drivers/misc/sunxi-tvutils/Kconfig"
+source "bsp/drivers/misc/leds/Kconfig"
 
 endmenu

@@ -2,7 +2,7 @@
 
 menu "VE Drivers"
 
-source "$(BSP_TOP)drivers/ve/cedar-ve/Kconfig"
-source "$(BSP_TOP)drivers/ve/google-ve/Kconfig"
+source "bsp/drivers/ve/cedar-ve/Kconfig"
+source "bsp/drivers/ve/google-ve/Kconfig"
 
 endmenu

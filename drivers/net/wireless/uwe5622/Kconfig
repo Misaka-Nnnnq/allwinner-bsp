@@ -7,7 +7,7 @@ config SPARD_WLAN_SUPPORT
 	  This is support for spreadtrum wireless chip.
 
 if SPARD_WLAN_SUPPORT
-source "$(BSP_TOP)drivers/net/wireless/uwe5622/unisocwcn/Kconfig"
-source "$(BSP_TOP)drivers/net/wireless/uwe5622/unisocwifi/Kconfig"
-source "$(BSP_TOP)drivers/net/wireless/uwe5622/tty-sdio/Kconfig"
+source "bsp/drivers/net/wireless/uwe5622/unisocwcn/Kconfig"
+source "bsp/drivers/net/wireless/uwe5622/unisocwifi/Kconfig"
+source "bsp/drivers/net/wireless/uwe5622/tty-sdio/Kconfig"
 endif

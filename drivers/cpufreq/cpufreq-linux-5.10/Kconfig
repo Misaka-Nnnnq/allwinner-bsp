@@ -23,7 +23,7 @@ config AW_CPUFREQ_DT_PLATDEV
 	  If in doubt, say N.
 
 if ARM || ARM64
-source "$(BSP_TOP)drivers/cpufreq/cpufreq-linux-5.10/Kconfig.arm"
+source "bsp/drivers/cpufreq/cpufreq-linux-5.10/Kconfig.arm"
 endif
 
 endmenu

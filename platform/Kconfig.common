@@ -30,4 +30,4 @@ ker-ver-gt = $(shell,[ $(ker-ver-num) -gt $(ver-num,$(1),$(2),$(3)) ] && echo "$
 ker-ver-ge = $(shell,[ $(ker-ver-num) -ge $(ver-num,$(1),$(2),$(3)) ] && echo "$(4)" || echo "$(5)")
 
 ## Run Test-Cases
-#source "$(BSP_TOP)platform/Kconfig.test"
+#source "bsp/platform/Kconfig.test"

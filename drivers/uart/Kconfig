@@ -71,6 +71,6 @@ config AW_UART_DYNAMIC_DEBUG
 	help
 	  Enable uart dynamic debug
 
-source "$(BSP_TOP)drivers/uart/sunxi-soft-uart/Kconfig"
+source "bsp/drivers/uart/sunxi-soft-uart/Kconfig"
 
 endmenu

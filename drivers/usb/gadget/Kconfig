@@ -20,9 +20,9 @@ menuconfig USB_SUNXI_GADGET
 
 	  If unsure, say N.
 
-source "$(BSP_TOP)drivers/usb/gadget/function/Kconfig"
+source "bsp/drivers/usb/gadget/function/Kconfig"
 
-source "$(BSP_TOP)drivers/usb/gadget/legacy/Kconfig"
+source "bsp/drivers/usb/gadget/legacy/Kconfig"
 
 endif # USB_GADGET
 

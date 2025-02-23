@@ -2,10 +2,10 @@
 
 menu "Allwinner BSP"
 
-source "$(BSP_TOP)platform/Kconfig"
-source "$(BSP_TOP)platform/Kconfig.debug"
-source "$(BSP_TOP)drivers/Kconfig"
-source "$(BSP_TOP)modules/nand/Kconfig"
-source "$(BSP_TOP)modules/gpu/Kconfig"
+source "bsp/platform/Kconfig"
+source "bsp/platform/Kconfig.debug"
+source "bsp/drivers/Kconfig"
+source "bsp/modules/nand/Kconfig"
+source "bsp/modules/gpu/Kconfig"
 
 endmenu

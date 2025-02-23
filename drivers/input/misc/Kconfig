@@ -15,7 +15,7 @@ menuconfig AW_INPUT_MISC
 
 if AW_INPUT_MISC
 
-source "$(BSP_TOP)drivers/input/misc/hall_sensor/Kconfig"
-source "$(BSP_TOP)drivers/input/misc/vibrator/Kconfig"
+source "bsp/drivers/input/misc/hall_sensor/Kconfig"
+source "bsp/drivers/input/misc/vibrator/Kconfig"
 
 endif

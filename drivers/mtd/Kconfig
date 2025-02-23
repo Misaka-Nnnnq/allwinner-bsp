@@ -98,7 +98,7 @@ config AW_MTD_PSTORE_FTRACE_SIZE
 endif
 
 menu "Partition parsers"
-source "$(BSP_TOP)drivers/mtd/parsers/Kconfig"
+source "bsp/drivers/mtd/parsers/Kconfig"
 endmenu
 
 choice
@@ -122,10 +122,10 @@ choice
 		  device drivers and the SPI NOR device driver.
 endchoice
 
-source "$(BSP_TOP)drivers/mtd/spi-nor-5.15/Kconfig"
+source "bsp/drivers/mtd/spi-nor-5.15/Kconfig"
 
-source "$(BSP_TOP)drivers/mtd/spi-nor-6.1/Kconfig"
+source "bsp/drivers/mtd/spi-nor-6.1/Kconfig"
 
-source "$(BSP_TOP)drivers/mtd/awnand/Kconfig"
+source "bsp/drivers/mtd/awnand/Kconfig"
 
 endif # AW_MTD

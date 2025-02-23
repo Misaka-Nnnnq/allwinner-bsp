@@ -5,7 +5,7 @@ menu "Network Device Drivers"
 
 if NETDEVICES
 
-source "$(BSP_TOP)drivers/net/wireless/Kconfig"
+source "bsp/drivers/net/wireless/Kconfig"
 
 endif
 

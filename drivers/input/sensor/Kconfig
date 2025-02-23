@@ -15,12 +15,12 @@ menuconfig AW_INPUT_SENSOR
 
 if AW_INPUT_SENSOR
 
-source "$(BSP_TOP)drivers/input/sensor/sc7a20/Kconfig"
-source "$(BSP_TOP)drivers/input/sensor/stk3x1x/Kconfig"
-source "$(BSP_TOP)drivers/input/sensor/mir3da/Kconfig"
-source "$(BSP_TOP)drivers/input/sensor/msa/Kconfig"
-source "$(BSP_TOP)drivers/input/sensor/mmc5603/Kconfig"
-source "$(BSP_TOP)drivers/input/sensor/bmi323/Kconfig"
-source "$(BSP_TOP)drivers/input/sensor/qmi8658/Kconfig"
+source "bsp/drivers/input/sensor/sc7a20/Kconfig"
+source "bsp/drivers/input/sensor/stk3x1x/Kconfig"
+source "bsp/drivers/input/sensor/mir3da/Kconfig"
+source "bsp/drivers/input/sensor/msa/Kconfig"
+source "bsp/drivers/input/sensor/mmc5603/Kconfig"
+source "bsp/drivers/input/sensor/bmi323/Kconfig"
+source "bsp/drivers/input/sensor/qmi8658/Kconfig"
 
 endif

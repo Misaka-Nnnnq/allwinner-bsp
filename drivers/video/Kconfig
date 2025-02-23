@@ -3,4 +3,4 @@
 # fbdev configuration
 #
 
-source "$(BSP_TOP)drivers/video/sunxi/Kconfig"
+source "bsp/drivers/video/sunxi/Kconfig"

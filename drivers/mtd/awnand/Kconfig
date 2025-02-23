@@ -34,7 +34,7 @@ config SIMULATE_MULTIPLANE
 
 	  If unsure, say Y.
 
-source "$(BSP_TOP)drivers/mtd/awnand/spinand/Kconfig"
-source "$(BSP_TOP)drivers/mtd/awnand/rawnand/Kconfig"
+source "bsp/drivers/mtd/awnand/spinand/Kconfig"
+source "bsp/drivers/mtd/awnand/rawnand/Kconfig"
 
 endmenu

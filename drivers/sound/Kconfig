@@ -8,8 +8,8 @@ menu "SOUND Drivers"
 	depends on AW_BSP
 
 if SND_SOC
-	source "$(BSP_TOP)drivers/sound/codecs/Kconfig"
-	source "$(BSP_TOP)drivers/sound/platform/Kconfig"
+	source "bsp/drivers/sound/codecs/Kconfig"
+	source "bsp/drivers/sound/platform/Kconfig"
 endif
 
 endmenu

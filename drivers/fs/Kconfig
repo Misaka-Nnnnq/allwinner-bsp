@@ -14,12 +14,12 @@ menuconfig AW_FS_5_15
 	  aw fs modify for linux 5.15,such as fat
 
 if AW_FS_5_15
-source "$(BSP_TOP)drivers/fs/linux-5.15/Kconfig"
+source "bsp/drivers/fs/linux-5.15/Kconfig"
 endif
 
 #menu "select fs driver for linux 6.1"
 #	depends on !FAT_FS && AW_BSP && $(VERSION) = 6 && $(PATCHLEVEL) = 1
 
-#source "$(BSP_TOP)drivers/fs/linux-$(VERSION).$(PATCHLEVEL)/Kconfig"
+#source "bsp/drivers/fs/linux-$(VERSION).$(PATCHLEVEL)/Kconfig"
 #endmenu
 

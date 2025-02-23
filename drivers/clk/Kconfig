@@ -3,8 +3,8 @@
 menu "Clock Drivers"
 	depends on AW_BSP
 
-source "$(BSP_TOP)drivers/clk/sunxi/Kconfig"
-source "$(BSP_TOP)drivers/clk/sunxi-ng/Kconfig"
+source "bsp/drivers/clk/sunxi/Kconfig"
+source "bsp/drivers/clk/sunxi-ng/Kconfig"
 
 config AW_CCU_DEBUG
 	tristate "DebugFS representation of clock tree"

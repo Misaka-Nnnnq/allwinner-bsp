@@ -9,6 +9,6 @@ config AW_NAND
 	  The nand used on the platform. it's nftl nand driver.
 
 	  If unsure, say m.
-source "$(BSP_TOP)modules/nand/common1/Kconfig"
+source "bsp/modules/nand/common1/Kconfig"
 
 endmenu

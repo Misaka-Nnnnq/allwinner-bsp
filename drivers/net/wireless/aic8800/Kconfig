@@ -42,10 +42,10 @@ config USB_MSG_EP
 	  This would enable usb message endpoint
 
 if AIC_WLAN_SUPPORT
-source "$(BSP_TOP)drivers/net/wireless/aic8800/aic8800_fdrv/Kconfig"
-source "$(BSP_TOP)drivers/net/wireless/aic8800/aic8800_btlpm/Kconfig"
+source "bsp/drivers/net/wireless/aic8800/aic8800_fdrv/Kconfig"
+source "bsp/drivers/net/wireless/aic8800/aic8800_btlpm/Kconfig"
 endif
 
 if AIC_INTF_USB
-source "$(BSP_TOP)drivers/net/wireless/aic8800/aic8800_btusb/Kconfig"
+source "bsp/drivers/net/wireless/aic8800/aic8800_btusb/Kconfig"
 endif

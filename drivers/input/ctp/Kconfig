@@ -13,16 +13,16 @@ menuconfig AW_INPUT_CTP
 
 if AW_INPUT_CTP
 
-source "$(BSP_TOP)drivers/input/ctp/gt9xx_secondary//Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/gslx680new/Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/wacom_pen/Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/gt9xxnew/Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/gt9xx/Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/hynitron/Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/ilitek_tddi/Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/focaltech_touch/Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/tlsc6x/Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/gt82x/Kconfig"
-source "$(BSP_TOP)drivers/input/ctp/nvt36xxx/Kconfig"
+source "bsp/drivers/input/ctp/gt9xx_secondary//Kconfig"
+source "bsp/drivers/input/ctp/gslx680new/Kconfig"
+source "bsp/drivers/input/ctp/wacom_pen/Kconfig"
+source "bsp/drivers/input/ctp/gt9xxnew/Kconfig"
+source "bsp/drivers/input/ctp/gt9xx/Kconfig"
+source "bsp/drivers/input/ctp/hynitron/Kconfig"
+source "bsp/drivers/input/ctp/ilitek_tddi/Kconfig"
+source "bsp/drivers/input/ctp/focaltech_touch/Kconfig"
+source "bsp/drivers/input/ctp/tlsc6x/Kconfig"
+source "bsp/drivers/input/ctp/gt82x/Kconfig"
+source "bsp/drivers/input/ctp/nvt36xxx/Kconfig"
 
 endif #touch input device support

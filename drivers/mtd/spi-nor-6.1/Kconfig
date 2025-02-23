@@ -16,6 +16,6 @@ config AW_MTD_SPI_NOR_USE_4K_SECTORS
 	  Please note that some tools/drivers/filesystems may not work with
 	  4096 B erase size (e.g. UBIFS requires 15 KiB as a minimum).
 
-source "$(BSP_TOP)drivers/mtd/spi-nor-6.1/controllers/Kconfig"
+source "bsp/drivers/mtd/spi-nor-6.1/controllers/Kconfig"
 
 endif # AW_MTD_SPI_NOR

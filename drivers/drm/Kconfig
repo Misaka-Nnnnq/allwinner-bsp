@@ -136,8 +136,8 @@ config AW_DRM_TRILINEAR_EDP14
 
 menu "sunxi drm panels select"
 	depends on AW_DRM
-source "$(BSP_TOP)drivers/drm/panel/Kconfig"
+source "bsp/drivers/drm/panel/Kconfig"
 endmenu
-source "$(BSP_TOP)drivers/drm/phy/Kconfig"
+source "bsp/drivers/drm/phy/Kconfig"
 
 endmenu

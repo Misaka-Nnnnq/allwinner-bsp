@@ -42,7 +42,7 @@ config CSI_CCI
 		be cci or i2c in the system.
 
 if CSI_CCI
-source "$(BSP_TOP)drivers/vin/vin-cci/Kconfig"
+source "bsp/drivers/vin/vin-cci/Kconfig"
 endif
 
 config FLASH
@@ -56,7 +56,7 @@ config ACTUATOR
 	default n
 
 if ACTUATOR
-source "$(BSP_TOP)drivers/vin/modules/actuator/Kconfig"
+source "bsp/drivers/vin/modules/actuator/Kconfig"
 endif
 
 config SENSOR_LIST
@@ -200,6 +200,6 @@ config RV_RUN_CAR_REVERSE
 	depends on VIN_INIT_MELIS && VIDEO_SUNXI_VIN_SPECIAL
 	default n
 
-source "$(BSP_TOP)drivers/vin/modules/sensor/Kconfig"
+source "bsp/drivers/vin/modules/sensor/Kconfig"
 
 endmenu
