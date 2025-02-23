@@ -1451,7 +1451,7 @@ static s32 de_ccsc_de2_apply(struct de_csc_handle *hdl,
 			  out_info->color_range, csc_coeff);
 
 	if (o_csc_coeff)
-		memcpy(o_csc_coeff, csc_coeff, sizeof(u32) * 16);
+		memcpy(o_csc_coeff, csc_coeff, sizeof(u32) * 12);
 
 	if (apply) {
 		reg->c00.dwval = *(csc_coeff);
