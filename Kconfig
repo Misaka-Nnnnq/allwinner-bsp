@@ -6,6 +6,5 @@ source "bsp/platform/Kconfig"
 source "bsp/platform/Kconfig.debug"
 source "bsp/drivers/Kconfig"
 source "bsp/modules/nand/Kconfig"
-source "bsp/modules/gpu/Kconfig"
 
 endmenu

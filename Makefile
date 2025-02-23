@@ -2,4 +2,3 @@
 
 obj-y += drivers/
 obj-y += modules/nand/
-obj-y += modules/gpu/
